@@ -597,6 +597,11 @@ footer .footermenu li a{
 {
     header{
         padding: 20px 20px;
+        /* left: 0; */
     }
+    .logo{
+        left: 0;
+    }
+
 }
 
