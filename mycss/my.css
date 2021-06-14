@@ -618,8 +618,14 @@ footer .footermenu li a{
         align-items: center;
         flex-direction: column; */
     }
+    /* contectform */
     .contact .contactform{
         width: 0;
+
+    }
+    .contact .contactform .row{
+        grid-template-columns: repeat(2,1fr);
+
 
     }
     /* .ss{
