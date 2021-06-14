@@ -609,8 +609,14 @@ footer .footermenu li a{
         align-items: center;
         flex-direction: column; */
     }
+    .ss{
+        right: 15%;
+    }
     .cover{
         width: 100%;
+    }
+    .menu{
+        right: 0;
     }
 
 }
