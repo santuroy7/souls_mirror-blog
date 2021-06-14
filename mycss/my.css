@@ -262,7 +262,7 @@ section{
     margin-top: 20px;
     /* border: 3px solid black; */
     width: 100%;
-    height: 1480px;
+    /* height: 1480px; */
     /* grid-column-gap: 20px; */
 }
 .post .contentbox .postcolumn{
@@ -395,7 +395,7 @@ height: 600px;
 
 }
 .contact .contactform .row{
-    /* border: 2px solid brown; */
+    border: 2px solid green;
     margin-top: 20px;
     width: 100%;
     height: 40px;
@@ -409,6 +409,37 @@ height: 600px;
 
     
 }
+.contact .contactform .row4{
+    border: 2px solid brown;
+    margin-top: 20px;
+    width: 100%;
+    height: 40px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 25px;
+    /* outline: none; */
+    /* border-bottom: 1.5px solid black; */
+    color: black;
+
+
+    
+}
+
+
+
+.contact .contactform .row4 input{
+    border: none;
+    outline: none;
+    border-bottom: 1.5px solid black;
+    border-radius: 10px;
+    padding-left: 8.9px;
+    color: black;
+    background: transparent;
+    /* font-size: 20px; */
+    /* font-weight: 300; */
+    font-weight: 400;
+}
+
 .contact .contactform .row input{
     border: none;
     outline: none;
@@ -423,7 +454,7 @@ height: 600px;
 }
 
 .contact .contactform .row2{
-    /* border: 2px solid pink; */
+    border: 2px solid pink;
     margin-top: 20px;
     width: 100%;
     /* height: 40px; */
@@ -568,7 +599,7 @@ footer .footerbar{
     text-decoration: none;
 }
 footer .footerbar ul{
-    border: 10px solid green;
+    /* border: 10px solid green; */
     text-decoration: none;
 }
 footer .footermenu li{
@@ -606,7 +637,22 @@ footer .footermenu li a{
         padding: 25px;
     }
     .banner .conten{
-        padding: 45px
+        padding: 40px
+    }
+    .about .contentbox{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .post .contentbox{
+        grid-template-columns: repeat(1,1fr);
+        
+
+
+    }
+    .post .contentbox .postcolumn .postbox.extraHeight{
+        height: 390px;
+    }
+    .post .contentbox .postcolumn .postbox.extraHeight img {
+        height: 390px;
     }
     .logo{
         left: 0;
@@ -614,20 +660,28 @@ footer .footermenu li a{
     }
     .navbar{
         height: 100%;
-        /* justify-content: center;
-        align-items: center;
-        flex-direction: column; */
-    }
-    /* contectform */
-    .contact .contactform{
-        width: 0;
-
+       
     }
     .contact .contactform .row{
         grid-template-columns: repeat(1,1fr);
 
 
     }
+    .contact .contactform .row4{
+        grid-template-columns: repeat(1,1fr);
+        /* border: 2px solid black; */
+        margin-top: 47px;
+
+
+    }
+    .contact .contactform .row2{
+        margin-top: 40px;
+    }
+    /* contectform */
+    /* .contact .contactform{
+        width: 0;
+
+    } */
     /* .ss{
         right: 15%;
     }
