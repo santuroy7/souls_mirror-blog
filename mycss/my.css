@@ -386,7 +386,7 @@ height: 600px;
     /* border: 2px solid black; */
     position: relative;
     width: 100%;
-    max-width: 700px;
+    max-width: 750px;
     margin-top: 23px;
     background: white;
     padding: 15px;
@@ -617,6 +617,10 @@ footer .footermenu li a{
         /* justify-content: center;
         align-items: center;
         flex-direction: column; */
+    }
+    .contact .contactform{
+        width: 0;
+
     }
     /* .ss{
         right: 15%;
