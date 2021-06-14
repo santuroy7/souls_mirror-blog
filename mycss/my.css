@@ -591,3 +591,12 @@ footer .footermenu li a{
     letter-spacing: 1px;
 }
 
+
+/* responsive */
+@media (max-width: 911px)
+{
+    header{
+        padding: 20px 20px;
+    }
+}
+
