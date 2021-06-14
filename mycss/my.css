@@ -599,6 +599,15 @@ footer .footermenu li a{
         padding: 20px 20px;
         /* left: 0; */
     }
+    header.sticky{
+        padding: 10px 20px;
+    }
+    section{
+        padding: 25px;
+    }
+    .banner .conten{
+        padding: 45px
+    }
     .logo{
         left: 0;
         
@@ -609,7 +618,7 @@ footer .footermenu li a{
         align-items: center;
         flex-direction: column; */
     }
-    .ss{
+    /* .ss{
         right: 15%;
     }
     .cover{
@@ -617,7 +626,7 @@ footer .footermenu li a{
     }
     .menu{
         right: 0;
-    }
+    } */
 
 }
 
