@@ -692,6 +692,11 @@ footer .footermenu li a{
         width: 20px;
     height: 20px;
     }
+    .menu.active{
+        width: 20px;
+        height: 20px;
+    }
+
 
     footer .footerbar {
         /* border: 1px solid black; */
