@@ -168,7 +168,8 @@ section{
     text-align: center;
     text-transform: uppercase;
     color: var(--black);
-    font-family: 'Aclonica', sans-serif;
+    /* font-family: 'Aclonica', sans-serif; */
+    margin-top: 25px;
 
 }
 .button{
