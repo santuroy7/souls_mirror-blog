@@ -707,20 +707,24 @@ footer .footermenu li a{
         /* padding: 9px 68px; */
         /* broder: 2px solid black; */
     }
-    /* contectform */
-    /* .contact .contactform{
-        width: 0;
-
-    } */
-    /* .ss{
-        right: 15%;
+    .banner .conten h4 {
+        font-size: 1.5em;
+        font-weight: bold;
+        letter-spacing: 3px;
+        text-align: center;
+        text-transform: uppercase;
+        color: var(--black);
+        margin-top: 10px;
     }
-    .cover{
-        width: 100%;
+    .banner .conten h2 {
+        font-size: 1.61em;
+        font-weight: bolder;
+        color: var(--black);
+        letter-spacing: 10px;
+        text-transform: uppercase;
+        text-align: center;
     }
-    .menu{
-        right: 0;
-    } */
+   
 
 }
 
