@@ -9,7 +9,8 @@
     <title>Soul's Mirror</title>
 </head>
 
-<body>
+<!-- adding this on contextmenu for disable inspect element -->
+<body oncontextmenu="return false;">
     <!-- creating header for logo and menu -->
     <header>
         <a href="#home" class="logo">Soul's Mirror</a>
@@ -309,6 +310,30 @@
                 navbar.classList.remove('active');
 
             }
+            // <!-- adding this for disable inspect element -->
+            // document.onkeydown=function(e)
+            // {
+            //     if(event.keyCode==123)
+            //     {
+
+            //         return false;
+            //     }
+            //     if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0))
+            //     {
+            //         return false;
+            //     }
+            //     if(e.ctrlKey && e.shiftKey && e.keyCode=='J'.charCodeAt(0))
+            //     {
+            //         return false;
+            //     }
+            //     if(e.ctrlKey && e.keyCode=='U'.charCodeAt(0))
+            //     {
+            //         return false;
+            //     }
+
+            // }
+
+
 
         </script>
 
