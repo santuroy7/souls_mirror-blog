@@ -672,7 +672,7 @@ footer .footermenu li a{
     }
     .logo{
         left: 0;
-        font-size: 1.1em;
+        /* font-size: 1.1em; */
         
     }
     .navbar{
