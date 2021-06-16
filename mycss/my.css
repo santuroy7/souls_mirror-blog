@@ -652,6 +652,9 @@ footer .footermenu li a{
     .banner .conten{
         padding: 40px
     }
+    .banner .conten h2{
+        font-size: 2.5em;
+    }
     .about .contentbox{
         grid-template-columns: repeat(1,1fr);
     }
@@ -742,6 +745,7 @@ footer .footermenu li a{
         text-transform: uppercase;
         text-align: center;
     }
+
    
 
 }
