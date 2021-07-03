@@ -1,13 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Join us</title>
+    <link rel="stylesheet" href="joinus.css">
+    <title>Join Us</title>
 </head>
-<body>
-    <p>join us (sign up/ sign in)</p>
-    
+
+<body oncontextmenu="return false;">
+    <!-- <p>hello </p> -->
+    <div class="container">
+        <div class="bluebg">
+            <div class="box_signin">
+                <h2>Allready Have An Account ?</h2>
+                <button class="sign_in_btn">Sign in</button>
+            </div>
+            <div class="box_signup">
+                <h2>Don't Have An Account ?</h2>
+                <button class="sign_up_btn">Sign up</button>
+            </div>
+        </div>
+        <div class="formbox">
+            <div class="form_signin">
+                <form>
+                    <h3>Sign In</h3>
+            
+                        <input type="text" placeholder="Username" id="username">
+                        <input type="password" placeholder="Password" id="password">
+                        <input type="submit" value="Sign in" id="submit">
+                        <a href="#" id="forgot">Forgot Password</a>
+                    
+                </form>
+            </div>
+
+            <div class="form_signup">
+                <form>
+                    <h3>Sign Up</h3>
+            
+                        <input type="text" placeholder="Username" id="username">
+                        <input type="mail" placeholder="Email I'd" id="mail">
+                        <input type="password" placeholder="Password" id="password">
+                        <input type="password" placeholder="Confirm Password" id="conpass">
+                        <input type="submit" value="Register" id="register">
+                        <!-- <a href="#" id="forgot">Forgot Password</a> -->
+                    
+                </form>
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <!-- script -->
+    <script>
+        const sign_in_btn=document.querySelector('.sign_in_btn');
+        const sign_up_btn=document.querySelector('.sign_up_btn');
+        const formbox=document.querySelector('.formbox');
+        const body = document.querySelector('body');
+
+        sign_up_btn.onclick = function(){
+            formbox.classList.add('active');
+            body.classList.add('active')
+        }
+        sign_in_btn.onclick = function(){
+            formbox.classList.remove('active');
+            body.classList.remove('active')
+
+        }
+
+
+         // <!-- adding this for disable inspect element -->
+         document.onkeydown=function(e)
+            {
+                if(event.keyCode==123)
+                {
+
+                    return false;
+                }
+                if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0))
+                {
+                    return false;
+                }
+                if(e.ctrlKey && e.shiftKey && e.keyCode=='J'.charCodeAt(0))
+                {
+                    return false;
+                }
+                if(e.ctrlKey && e.keyCode=='U'.charCodeAt(0))
+                {
+                    return false;
+                }
+
+            }
+
+    </script>
 </body>
+
 </html>

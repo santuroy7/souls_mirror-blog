@@ -1,0 +1,334 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+body
+{
+    /* border: 6px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background-color: rgb(11, 179, 198);
+    transform: 0.5s;
+}
+.container
+{
+    /* border: 4px solid red; */
+    position: relative;
+    width: 800px;
+    height: 500px;
+    margin: 15px;
+    /* background-color: yellowgreen; */
+
+}
+.bluebg
+{
+    /* border: 2px solid rgb(0, 0, 0); */
+    top: 40px;
+    position: absolute;
+    width: 100%;
+    height: 420px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: white; */
+    background: rgba(255,255,255,0.25);
+    /* box-shadow: 0 0 10px rgb(6, 64, 71); */
+    box-shadow: 0 20px 60px rgb(7, 7, 7);
+
+}
+.bluebg .box_signin{
+    /* border: 2.8px solid green; */
+    position: relative;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.bluebg .box_signup{
+    /* border: 2.8px solid green; */
+    position: relative;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.bluebg .box_signin h2{
+    /* border: 1px solid black; */
+    color: white;
+    font-size: 1.2em;
+    font-weight: 500;
+    margin-bottom: 12px;
+    font-family: 'Poppins', sans-serif;
+}
+.bluebg .box_signup h2{
+    /* border: 1px solid black; */
+    color: white;
+    font-size: 1.2em;
+    font-weight: 500;
+    margin-bottom: 12px;
+    font-family: 'Poppins', sans-serif;
+}
+.bluebg .box_signin button{
+    cursor: pointer;
+    padding: 10px 20px;
+    background: white;
+    color: black;
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+    /* border: none; */
+}
+.bluebg .box_signin button:hover{
+     background: rgb(241, 211, 211);
+
+}
+.bluebg .box_signup button{
+    cursor: pointer;
+    padding: 10px 20px;
+    background: white;
+    color: black;
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+
+}
+.bluebg .box_signup button:hover{
+    background: rgb(215, 241, 245); 
+}
+.formbox{
+    /* border: 3px solid blue; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: white;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 5px 40px black;
+    transition: 0.5s ease-in-out;
+    overflow: hidden;
+
+}
+.formbox.active{
+    left: 50%;
+    /* z-index: 10000000000; */
+}
+body.active{
+    background: rgb(223, 13, 13);
+}
+
+.formbox .form_signin{
+    /* border: 2px solid black; */
+    position: absolute;
+    left: 0;
+    width: 100%;
+    padding: 45px;
+    transition: 0.5s;
+}
+.formbox .form_signin form{
+    /* border: 2px solid yellow; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.formbox .form_signin form h3{
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1.5em;
+    color: black;
+    font-weight: 600;
+    margin-bottom: 23px;
+}
+.formbox .form_signin form input{
+    /* border: 2px solid red; */
+    width: 100%;
+    margin-bottom: 23px;
+    padding: 12.8px;
+    outline: none;
+    font-size: 15.5px;
+    font-weight: 500;
+    border: 0.5px solid black;
+    border-radius: 3px;
+    font-family: 'Montserrat', sans-serif;
+
+    
+}
+.formbox .form_signin form #submit{
+    border: none;
+    cursor: pointer;
+    /* background-color: ; */
+    /* background: rgba(255,255,255,0.25); */
+    background-color: rgb(11, 179, 198);
+    color: black;
+    max-width: 110px;
+    outline: none;
+    /* font-family: 'Poppins', sans-serif; */
+    /* font-weight: 600; */
+    
+    
+}
+.formbox .form_signin form #submit:hover{
+    background:  rgb(78, 214, 230);
+    /* font-weight: 600; */
+}
+
+.formbox .form_signin form #forgot{
+    text-decoration: underline;
+    color: black;
+}
+.formbox .form_signin form #forgot:hover{
+    /* text-decoration: none; */
+    color: rgb(11, 179, 198);
+    text-decoration: underline;
+    letter-spacing: 1px;
+    /* font-weight: 600; */
+}
+/* signup  */
+.formbox.active .form_signin{
+    left: -100%;
+    transition-delay: 0s;
+    
+}
+.formbox .form_signin{
+    transition-delay: 0.25s;
+}
+
+
+
+
+
+/* this is for sign up  */
+.formbox .form_signup{
+    /* border: 2px solid black; */
+    position: absolute;
+    left: 0;
+    width: 100%;
+    padding: 45px;
+    transition: 0.5s;
+}
+.formbox .form_signup form{
+    /* border: 2px solid yellow; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.formbox .form_signup form h3{
+    font-family: 'Libre Baskerville', serif;
+
+    font-size: 1.5em;
+    color: black;
+    font-weight: 600;
+    margin-bottom: 23px;
+}
+.formbox .form_signup form input{
+    /* border: 2px solid red; */
+    width: 100%;
+    margin-bottom: 23px;
+    padding: 12.8px;
+    outline: none;
+    font-size: 15.5px;
+    font-weight: 500;
+    border: 0.5px solid black;
+    border-radius: 3px;
+    /* z-index: 99999; */
+    font-family: 'Montserrat', sans-serif;
+
+    
+}
+.formbox .form_signup form #register{
+    border: none;
+    cursor: pointer;
+    /* background-color: ; */
+    /* background: rgba(255,255,255,0.25); */
+    background-color: rgb(228, 39, 32);
+    color: black;
+    max-width: 110px;
+    outline: none;
+    
+    
+    
+}
+.formbox .form_signup form #register:hover{
+    background: rgb(236, 99, 94);
+}
+.formbox .form_signup{
+    left: 100%;
+    transition-delay: 0s;
+}
+.formbox.active .form_signup{
+    left: 0;
+    transition-delay: 0.25s;
+}
+
+
+/* Responsive */
+@media(max-width: 991px)
+{
+    .container{
+        max-width: 400px;
+        height: 650px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .container .bluebg{
+        top: 0;
+        /* height: 500px; */
+        height: 100%;
+
+    }
+    .formbox{
+        width: 100%;
+        height: 500px;
+        top: 0;
+        box-shadow: none;
+
+    }
+    /* .formbox .form_signup{
+        width: 100%;
+        height: 500px;
+        top: 0;
+        box-shadow: none;
+    } */
+    .bluebg .box_signup{
+        position: absolute;
+        width: 100%;
+        height: 150px;
+        bottom: 0;
+    }
+    .bluebg .box_signin{
+        position: absolute;
+        width: 100%;
+        height: 150px;
+        top: 0;
+
+    }
+    .formbox.active{
+        left: 0;
+        top: 150px;
+    }
+}
