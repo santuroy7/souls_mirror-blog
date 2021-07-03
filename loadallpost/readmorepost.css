@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Monoton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Viaoda+Libre&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Limelight&family=Viaoda+Libre&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+
+}
+:root{
+    --black: black;
+    --white: white;
+}
+/* body{
+    min-height: 150vh;
+    background: white;
+} */
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* border: 2px solid black; */
+    padding: 23px 115px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--white);
+    /* background: white; */
+    z-index: 10000000;
+    border-bottom: 0.5px solid black;
+    transition: 0.5s;
+}
+header.sticky{
+    padding: 12px 100px;
+
+}
+.logo{
+    position: relative;
+    display: inline-block;
+    color: var(--black);
+    /* color: black; */
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: bolder;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: 'Aclonica', sans-serif;
+
+}
+/* creating menu bar */
+.menu{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background: url("Images/menu2.png");
+    background-size: 30px;
+    background-repeat: no-repeat;
+    /* border: 2px solid black; */
+    background-position: center;
+    cursor: pointer;
+
+
+}
+/* this is for changing menu bar (=)into close icon(x) ... */
+.menu.active{
+    background: url("Images/close.png");
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 30px;
+    width: 30px;
+}
