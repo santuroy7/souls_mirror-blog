@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,11 +8,15 @@
     <link rel="stylesheet" href="readmorepost.css">
     <title>All Post's</title>
 </head>
+
 <body>
     <!-- this is for header -->
     <header>
         <a href="\index.html#home" class="logo">Soul's Mirror</a>
-     
+        <div class="ss">
+            <a href="joinus/joinus.html" class="joinus">join us</a>
+        </div>
+
         <div class="menu">
 
         </div>
@@ -25,32 +30,33 @@
         <!-- <li><a href="joinus.html">Join Us</a></li> -->
         <li><a href="/souls_mirror-blog/#contact" onclick="menuclose();">Contact Us</a></li>
     </ul>
-    
+
 
 
 
 
     <script>
-         // this is for menu 
-         const menu = document.querySelector('.menu');
-            // this is for navbar 
-            const navbar = document.querySelector('.navbar');
-            menu.onclick = function () {
-                menu.classList.toggle('active');
-                navbar.classList.toggle('active');
-            }
+        // this is for menu 
+        const menu = document.querySelector('.menu');
+        // this is for navbar 
+        const navbar = document.querySelector('.navbar');
+        menu.onclick = function () {
+            menu.classList.toggle('active');
+            navbar.classList.toggle('active');
+        }
 
-            // adding  this for animation in top(header)..
-            window.addEventListener('scroll', function () {
-                const header = document.querySelector('header');
-                header.classList.toggle('sticky', window.scrollY > 0);
-            })
-            // adding this for: " menu close after clicking on anylink"
-            function menuclose() {
-                menu.classList.remove('active');
-                navbar.classList.remove('active');
+        // adding  this for animation in top(header)..
+        window.addEventListener('scroll', function () {
+            const header = document.querySelector('header');
+            header.classList.toggle('sticky', window.scrollY > 0);
+        })
+        // adding this for: " menu close after clicking on anylink"
+        function menuclose() {
+            menu.classList.remove('active');
+            navbar.classList.remove('active');
 
-            }
+        }
     </script>
 </body>
+
 </html>
