@@ -54,6 +54,10 @@
     </div>
 
 
+     <!-- adding this for audio effect -->
+     <audio src="audio1.mp3" id="sound"></audio>
+
+
     <!-- script -->
     <script>
         const sign_in_btn=document.querySelector('.sign_in_btn');
@@ -61,13 +65,20 @@
         const formbox=document.querySelector('.formbox');
         const body = document.querySelector('body');
 
+        var au = document.getElementById('sound');
+        function santu(){
+            au.play();
+        }
+
         sign_up_btn.onclick = function(){
             formbox.classList.add('active');
             body.classList.add('active')
+            santu();
         }
         sign_in_btn.onclick = function(){
             formbox.classList.remove('active');
             body.classList.remove('active')
+            santu();
 
         }
 
