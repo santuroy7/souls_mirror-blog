@@ -1,4 +1,4 @@
 # souls_mirror-blog
 Responsive Blogging website
 
-Still working on :)
+Still working on it:)
